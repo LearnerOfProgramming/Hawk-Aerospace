@@ -38,7 +38,7 @@ export default function Navbar() {
                         </>
                         )
                     })}
-                    <button className=" ml-10 bg-primary px-5 py-2 rounded text-neutral-50 hover:bg-red-500 ease-in delay-100 duration-100">Register With Us</button>
+                    <button className=" ml-10 bg-primary px-5 py-2 rounded text-neutral-50 hover:bg-red-700 ease-in delay-100 duration-100">Register With Us</button>
                 </div>
 
             </nav>

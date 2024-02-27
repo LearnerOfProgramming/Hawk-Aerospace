@@ -14,8 +14,9 @@ import ImageCard from "./imagecard";
 const Home = () => {
 
 
-    const images = ["/assets/image1.jpeg",
-        "/assets/image2.jpeg",
+    const images = [
+     
+        "/assets/image6.jpeg",
         "/assets/image3.jpeg",
         "/assets/image4.jpeg",
         "/assets/image5.jpeg",
@@ -114,7 +115,7 @@ const Home = () => {
                     <h1 className="  font-semibold text-8xl  text-center ">Services Offered</h1>
                     <div className="flex justify-evenly  bg-alkaline">
                         <ImageCard content="Drones in agriculture offer farmers advanced capabilities such as crop monitoring, pest control, and irrigation management. These UAVs can provide high-resolution images and data, helping farmers make informed decisions." heading="Agriculture" image="/assets/agri.jpg" />
-                        <ImageCard heading="Utility" content="Drones in utility enable efficient infrastructure inspections, vegetation management, and emergency response, enhancing safety, reducing downtime, and improving overall operational effectiveness and reliability." image="/assets/agri.jpg" />
+                        <ImageCard heading="Utility" content="Drones in utility enable efficient infrastructure inspections, vegetation management, and emergency response, enhancing safety, reducing downtime, and improving overall operational effectiveness and reliability." image="/assets/utility.jpg" />
                         <ImageCard heading="Energy" content="Drones in energy improve efficiency and safety by inspecting infrastructure, monitoring assets, and aiding in disaster response, reducing costs and risks while increasing data accuracy and operational insights." image="/assets/energy.jpg" />
                     </div>
                 </div>
