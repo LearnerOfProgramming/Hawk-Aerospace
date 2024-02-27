@@ -25,8 +25,11 @@ export default function Navbar() {
     return (
         <>
             <nav className='z-10 shadow-md overflow-hidden h-24 justify-around flex items-center pr-3 top-0 fixed left-0 w-full opacity-100 bg-alkaline  '>
-                <img className=" h-auto w-60 opacity-90 " src="/assets/logo.png" alt="none"></img>
-                <div className="flex justify-evenly items-center w-4/5" >
+                <Link href={'/'}>
+
+                <img className=" h-auto w-60 opacity-90 " src="/assets/logo.png" alt="none"/>
+                </Link>
+                <div className=" flex justify-evenly items-center w-4/5" >
                     {nav_elems.map((key, index) => {
                         return (<><Link href={`/${nav_links[index]}` }>
                         <button className=" hover:border-secondary hover:border-b-4 hover:rounded-sm ease-in-out delay-50 duration-100  text-lg">{key}</button>
@@ -35,7 +38,7 @@ export default function Navbar() {
                         </>
                         )
                     })}
-                    <button className=" bg-primary px-5 py-2 rounded text-neutral-50 hover:bg-red-500 ease-in delay-100 duration-100">Newsletter</button>
+                    <button className=" ml-10 bg-primary px-5 py-2 rounded text-neutral-50 hover:bg-red-500 ease-in delay-100 duration-100">Register With Us</button>
                 </div>
 
             </nav>
