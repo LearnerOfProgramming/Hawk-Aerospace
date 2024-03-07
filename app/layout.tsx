@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Josefin_Sans, Montserrat, Nunito, Open_Sans } from "next/font/google";
 import "./globals.css";
-import { ReactLoadableManifest } from "next/dist/server/load-components";
+
 import Navbar from "./navbar";
-import SiteMap from "./sitemap";
+import SiteMap from "./footer";
 import './layout.css';
 
 import { Roboto } from "next/font/google";

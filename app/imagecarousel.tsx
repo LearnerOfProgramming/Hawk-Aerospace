@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Image from "next/image";
  
 export function CarouselSize(props : any) {
 
@@ -34,7 +35,7 @@ export function CarouselSize(props : any) {
             <div className="">
               
                 <div className="flex aspect-auto bg-white  items-center justify-center -mx-5">
-                  {props.images ? <img className="h-full w-screen object-cover filter blur-0" src={props.images[index]} /> :
+                  {props.images ? <Image alt="Image" className="h-full w-screen object-cover filter blur-0" src={props.images[index]} /> :
                     <span className="text-3xl font-semibold">{props.keyword} {index + 1}</span>}
                 </div>
               

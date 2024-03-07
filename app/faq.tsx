@@ -17,7 +17,7 @@ import {
         <AccordionItem value="item-2">
           <AccordionTrigger>How does Hawk Aerospace prioritize data privacy and security in agricultural drone operations?</AccordionTrigger>
           <AccordionContent>
-          Protecting our customers' data is paramount to us. Hawk Aerospace employs robust encryption protocols and secure data storage methods to safeguard all information collected during drone operations. We adhere strictly to industry best practices and regulatory standards to ensure compliance and peace of mind for our clients. Rest assured, when you choose Hawk Aerospace, your data privacy and security are our top priorities.
+          Protecting our customers&apos; data is paramount to us. Hawk Aerospace employs robust encryption protocols and secure data storage methods to safeguard all information collected during drone operations. We adhere strictly to industry best practices and regulatory standards to ensure compliance and peace of mind for our clients. Rest assured, when you choose Hawk Aerospace, your data privacy and security are our top priorities.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">

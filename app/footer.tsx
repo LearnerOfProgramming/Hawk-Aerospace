@@ -8,7 +8,7 @@ import Newsletter from "./newsletter";
 
 
 
-export default function SiteMap() {
+export default function SiteMap(){
     return (
         <>
             <div className="w-full bg-dark  overflow-none pt-10 flex flex-col mt-2 text-white" >
@@ -39,7 +39,8 @@ export default function SiteMap() {
                             +91 9819663183
                         </div>
                     </div>
-                    <div className="w-6/12  text-right pb-5">
+                    <div className="w-6/12  text-right pb-5 flex flex-col">
+                    <Newsletter/>
                         <table className="table-fixed w-full">
                             <thead>
                                 <tr className="font-black">
@@ -87,7 +88,7 @@ export default function SiteMap() {
 
                 </div>
                 <div className="flex flex-col items-center">
-                    <Newsletter/>
+                    
                     <Separator className="my-3 w-11/12 opacity-55" />
                     <div className=" text-white  text-center h-1/5 font-light text-sm opacity-90 pb-2">Copyright @2024 Hawk Aerospace </div>
                 </div>
