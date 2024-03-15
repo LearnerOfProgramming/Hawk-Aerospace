@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { rajdhani } from "./layout";
 
 
 export default function ImageCard(props: {
@@ -10,15 +11,16 @@ export default function ImageCard(props: {
     return (
         <>
             
+            <div className={rajdhani.className}>
 
-            <div className="bg-sky-300 hover:bg-cyan-200  aspect-auto w-full p-0 rounded-2xl overflow-hidden group  scale-75 group hover:shadow-lg flex flex-col  pb-16 transition-all duration-700  ease-in-out ">
-                <Image src={props.image} className="scale-110 object-cover group-hover:scale-125
-                transition-all duration-700  ease-in-out  aspect-auto h-3/4 -z-10 " alt="Image"/>
-                <div className="flex items-center flex-col p-6 -m-20 z-20  bg-sky-300 group-hover:bg-cyan-200 transition-all duration-700 ease-in-out pb-20">
-                    {/* <div className="w-full flex justify-center bg-white/80 pb-3 group-hover:bg-cyan-200 transition-all duration-700 ease-in-out"> */}
-                    <h1 className="text-6xl font-semibold text-slate-800/90 bg-white.50 drop-shadow-xl  group-hover:text-black">{props.heading}</h1>
-                    {/* </div> */}
-                    <div className='p-3 mt-4  w-3/4 text-center text-pretty opacity-90 group-hover:opacity-100 text-xl'>{props.content}</div>
+            <div className=" mt-24 bg-[#E5E5E5]  aspect-auto mx-10 overflow-hidden  pt-10 rounded-2xl  group   group hover:shadow-lg flex flex-col  pb-16 transition-all duration-500  ease-in-out hover:scale-110 ">
+                <img src={props.image} className="w-full h-full object-cover 
+                transition-all duration-700  ease-in-out  aspect-auto z-10 " alt="Image" />
+                <div className="pt-4">
+
+                <h1 className="text-center text-4xl font-semibold">{props.heading}</h1>
+                <p className="text-center text-2xl font-medium">{props.content}</p>
+                </div>
                 </div>
             </div>
                 

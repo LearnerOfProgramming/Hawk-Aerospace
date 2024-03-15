@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Josefin_Sans, Montserrat, Nunito, Open_Sans } from "next/font/google";
+import { Inter, Josefin_Sans, Montserrat, Nunito, Open_Sans, Rajdhani } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "./navbar";
@@ -10,11 +10,11 @@ import { Roboto } from "next/font/google";
 
 
 
-const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({ subsets: ["latin"], weight: "400" });
-const nunito = Open_Sans({ subsets: ["latin"] })
-// const nunito = Josefin_Sans ({ subsets: ["latin"] })
+// const inter = Inter({ subsets: ["latin"] });
+// const roboto = Roboto({ subsets: ["latin"], weight: "400" });
+// const nunito = Open_Sans({ subsets: ["latin"] })
 
+export const rajdhani = Rajdhani({ subsets:["latin"],weight: ["400","600","500","300","700"]})
 
 export const metadata: Metadata = {
   title: "Hawk Aerospace",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 const Nav = <Navbar></Navbar>
 
-const Separator = <div className=" mt-24"></div>
+// const Separator = <div className=" mt-24"></div>
 
 const siteMap = <SiteMap></SiteMap>
 
@@ -35,11 +35,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={nunito.className}>
-        <div className=" min-h-screen relative flex flex-col justify-between">
+      <body className={rajdhani.className}>
+        <div className=" min-h-screen relative flex flex-col  items-center justify-center">
           {Nav}
-          {Separator}
-          <div className="w-full children pb-2">
+    
+          <div className="w-full children pb-2 ">
 
             {children}
           </div>

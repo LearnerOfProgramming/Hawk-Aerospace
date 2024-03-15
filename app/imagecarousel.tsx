@@ -1,5 +1,8 @@
-"use client";
 
+"use client";
+import Autoplay from "embla-carousel-autoplay"
+import useEmblaCarousel from 'embla-carousel-react'
+import './imagecarousel.css';
 import {
   Carousel,
   CarouselContent,
@@ -9,24 +12,17 @@ import {
 } from "@/components/ui/carousel"
 import Image from "next/image";
  
+useEmblaCarousel.globalOptions = { loop: true }
 export function CarouselSize(props : any) {
 
-  // const [emblaRef] = useEmblaCarousel({ loop: true }, [
-  //   Autoplay({ delay: 1000 })
-  // ])
-  const content = [
-    {
-      title: "Image 1",
-      img: " ",
-      desc: " ",
-    },
-  ]
   return (
     <Carousel
-      opts={{
-        align: "start",
-        
-      }}
+    plugins={[
+      Autoplay({
+        delay: 4000,
+      }),
+    ]}
+  
       className={props.className}
     >
       <CarouselContent>
@@ -34,8 +30,8 @@ export function CarouselSize(props : any) {
           <CarouselItem key={index} className={props.innerclass}>
             <div className="">
               
-                <div className="flex aspect-auto bg-white  items-center justify-center -mx-5">
-                  {props.images ? <Image alt="Image" className="h-full w-screen object-cover filter blur-0" src={props.images[index]} /> :
+                <div className="flex aspect-auto w-full overflow-hidden  bg-white  items-center justify-center h-screen innercarousel ">
+                  {props.images ? <img alt="Image" className="w-full h-full object-cover " src={props.images[index]} /> :
                     <span className="text-3xl font-semibold">{props.keyword} {index + 1}</span>}
                 </div>
               
@@ -45,6 +41,11 @@ export function CarouselSize(props : any) {
       </CarouselContent>
       {/* <CarouselPrevious /> 
        <CarouselNext /> */}
+      <div className="w-full h-full  absolute flex items-end ">
+        <div className="w-full h-2/6 bg-gradient-to-b from-transparent to-white ">
+
+        </div>
+      </div>
     </Carousel>
   )
 }
