@@ -26,7 +26,7 @@ export function CarouselSize(props : any) {
       className={props.className}
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {Array.from({ length: Object.keys(props.images).length }).map((_, index) => (
           <CarouselItem key={index} className={props.innerclass}>
             <div className="">
               

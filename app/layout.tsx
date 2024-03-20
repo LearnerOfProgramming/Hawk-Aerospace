@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 const Nav = <Navbar></Navbar>
 
-// const Separator = <div className=" mt-24"></div>
+export const Separator2 = <div className=" mt-24"></div>
 
 const siteMap = <SiteMap></SiteMap>
 

@@ -20,7 +20,12 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        '3xl': '1700px',
+        '4xl':'1900px'
+     }
      
+      ,
       fontFamily: {
         display: ['Nunito'],
         josefin: ['Josefin-Sans'],
@@ -64,7 +69,7 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         dark: {
-          DEFAULT:'#0d121b',
+          DEFAULT:'#222222',
         },
         alkaline: {
           DEFAULT:'rgb(224 242 254)'

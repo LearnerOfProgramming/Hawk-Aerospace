@@ -3,8 +3,7 @@ import { CarouselSize } from "./imagecarousel";
 import './page.css';
 
 
-import { AccordionDemo } from "./faq";
-import ImageCard from "./imagecard";
+import ImageCard from "./component-library/imagecard";
 import { GrServices } from "react-icons/gr";
 import Image from "next/image";
 import Mission from "./misson";
@@ -13,6 +12,10 @@ import Stats from "./stats";
 import Products from "./products";
 
 import ServicesHome from "./services";
+import RPTOSection from "./rpto";
+import Stats2 from "./component-library/stats2";
+import Testimonial from "./testimonial";
+import FAQ from "./stash/faq";
 
 
 const Home = () => {
@@ -20,11 +23,11 @@ const Home = () => {
 
     const images = [
      
-        "/assets/image6.jpeg",
-        "/assets/image3.jpeg",
-        "/assets/image4.jpeg",
-        "/assets/image5.jpeg",
-        "/assets/image6.jpeg",
+        "/assets/home/slider/image1.jpg",
+        "/assets/home/slider/image2.jpg",
+        "/assets/home/slider/image3.jpg",
+        "/assets/home/slider/image4.jpg",
+        
     ];
     const Separator = <div className=" mb-96 "></div>
 
@@ -34,20 +37,15 @@ const Home = () => {
         <>
             <div className="flex flex-col items-center h-auto overflow-x-hidden">
                 <CarouselSize id="main-carousel" className=" flex items-start w-screen  carousel overflow-hidden bg-white select-none " keyword="Image" innerclass="" images={images} />
-                <Overlaymsg/>
+                {/* <Overlaymsg/> */}
                 <Stats />
                 <Mission/>
                 <Products />
-                <ServicesHome/> 
-                
-                <div className="w-11/12 rounded-sm m-4 p-12 mt-20 border-2">
-                    <h1 className="text-4xl font-bold mb-2">FAQs</h1>
-                    <AccordionDemo />
-                </div>
-
+                <ServicesHome /> 
+                <RPTOSection/>
+                <Stats2 />
+                <Testimonial/>
             </div>
-
-
         </>
     )
 }
