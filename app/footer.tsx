@@ -28,21 +28,21 @@ export default function SiteMap() {
                                 <FaFacebookF size={20} />
                                 <FaYoutube size={30} />
                             </div>
-                            <Newsletter/>
+                            <NewsletterDialog/>
                             
                             <div className="lg:hidden flex w-10/12 text-pretty mt-10">
                                 At Hawk Aerospace, our mission is to pioneer the skies with innovative drone technology, empowering industries worldwide.
                             </div>
                         </div>
-                        <div className=" lg:w-3/5 w-1/5 flex justify-between">
+                        <div className=" lg:w-3/5 w-1/5 flex justify-between select-none">
                             <div className="hidden lg:flex w-3/6 mt-10">
                                 At Hawk Aerospace, our mission is to pioneer the skies with innovative drone technology, empowering industries worldwide.
                             </div>
-                            <div className="   lg:w-2/6 grid grid-rows-4 text-center">
-                                <div>Clients</div>
-                                <div>Career</div>
-                                <div>CSR</div>
-                                <div>FAQs</div>
+                            <div className="   lg:w-2/6 grid grid-rows-4 text-center text-slate-300">
+                                <div className="  cursor-not-allowed">Clients</div>
+                                <div className="  cursor-not-allowed">Career</div>
+                                <div className="  cursor-not-allowed">CSR</div>
+                                <div className="  cursor-not-allowed">FAQs</div>
                             </div>
                         </div>
 
@@ -52,8 +52,8 @@ export default function SiteMap() {
                         <Separator className="my-3 w-full opacity-55" />
                         <div className=" flex  lg:flex-row flex-col items-center text-white  text-center font-light text-xs w-full lg:justify-between">
 
-                            <div className=" text-left  h-1/5 opacity-90 pb-2 w-1/2 lg:pl-4 lg:py-0 py-4">Copyright @2024 Hawk Aerospace </div>
-                            <div className=" lg:w-1/3 w-full flex  justify-around lg:py-0 py-4 ">
+                            <div className=" text-center lg:text-left  h-1/5 opacity-90 pb-2 w-1/2 lg:pl-4 lg:py-0 py-4">Copyright @2024 Hawk Aerospace </div>
+                            <div className=" lg:w-1/3 w-full flex  justify-evenly lg:py-0 py-4 ">
                                 <div className="opacity-90">Privacy Policy</div>
                                 <div className="opacity-90">Terms & Conditions</div>
                                 <div className="opacity-90">Cancellation Policy</div>

@@ -30,7 +30,7 @@ export default function AboutUs() {
                     <div className=" absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-full -mt-4">
                         <div className="flex lg: justify-center lg:flex-row flex-col items-center">
 
-                            <img src="/assets/logo-no-text.png" className=" h-auto w-5/12 sm:w-72  lg:w-80 lg:-mb-12 " />
+                            <img src="/assets/aboutus/hawk-white-logo.png" className=" h-auto w-5/12 sm:w-72  lg:w-80 lg:-mb-12 " />
 
 
                             <div className="text-white text-4xl text-center font-semibold sm:text-5xl md:text-6xl lg:text-7xl   flex items-center w-auto justify-center"><p className="w-4/5">
