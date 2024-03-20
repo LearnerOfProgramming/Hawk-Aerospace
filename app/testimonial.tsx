@@ -32,8 +32,8 @@ function TestimonialCard() {
                     </div>
                 </div>
                 <div className=" content pl-6">
-                "There are many variations passages of Lorem Ipsum majority some by words which don't look . 
-                There are many variations passages of Lorem don't look . "
+                &quot;There are many variations passages of Lorem Ipsum majority some by words which don&apos;t look . 
+                There are many variations passages of Lorem don&apos;t look .&quot;
                 </div>
             </Card>
         
