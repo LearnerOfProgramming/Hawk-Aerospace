@@ -47,7 +47,7 @@ export default function Navbar() {
 
                         <Link href={'/'}>
 
-                            <img className=" ml-8 h-auto w-48 opacity-90 " src="/assets/logo.png" alt="none" />
+                            <img className=" ml-4 md:ml-8 h-auto w-40 md:w-48 opacity-90 " src="/assets/logo.png" alt="none" />
                         </Link>
                         <div className=" hidden  xl:flex justify-evenly items-center w-4/5 pl-10" >
                             {nav_elems.map((key, index) => {
