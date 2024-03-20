@@ -70,7 +70,7 @@ export default function AboutUs() {
 
                     <div className="flex w-full  mt-4 items-center py-6">
                         <div className="w-2/3">
-                            <h1 className=" text-secondary font-bold text-2xl xl:text-3xl">Our Vision</h1>
+                            <h1 className=" text-secondary font-bold text-3xl">Our Vision</h1>
                             <div className={outfit.className}>
 
                                 <p className=" font-medium xl:w-3/5">At Hawk Aerospace, our mission is to pioneer the skies with innovative drone technology, empowering industries worldwide. We strive to  revolutionize aerial solutions through cutting-edge design , precision engineering, and advanced automation.</p>
