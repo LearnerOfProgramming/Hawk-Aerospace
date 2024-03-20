@@ -49,10 +49,10 @@ export default function Navbar() {
 
                             <img className=" ml-4 md:ml-8 h-auto w-40 md:w-48 opacity-90 " src="/assets/logo.png" alt="none" />
                         </Link>
-                        <div className=" hidden  xl:flex justify-evenly items-center w-4/5 pl-10" >
+                        <div className=" hidden  lg:flex justify-evenly items-center w-4/5 pl-10" >
                             {nav_elems.map((key, index) => {
                                 return (<><Link href={`/${nav_links[index]}`}>
-                                    <button className=" hover:border-secondary border-secondary hover:border-b-4 hover:rounded-sm ease-in-out delay-50 duration-100  text-xl">{key}</button>
+                                    <button className=" hover:border-secondary border-secondary hover:border-b-4 hover:rounded-sm ease-in-out delay-50 duration-100  text-lg xl:text-xl">{key}</button>
                                 </Link>
                                 </>
                                 )
@@ -60,7 +60,7 @@ export default function Navbar() {
                             <Contactus />
                         </div>
 
-                        <div className="xl:hidden flex px-5 sm:px-10 h-full items-center justify-center ">
+                        <div className="lg:hidden flex px-5 sm:px-10 h-full items-center justify-center ">
 
 
                             <Button className=" max-sm:hidden bg-secondary/80 h-4/6 rounded-2xl  hover:bg-sky-400" onClick={toggleDropdown}>
@@ -82,7 +82,7 @@ export default function Navbar() {
                                 initial={{ opacity: 0, scale: 1, y: -8 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
                                 exit={{ opacity: 0, scale: 1, y: -8 }}
-                                className="w-full  fixed top-32  inset-x-0 xl:hidden z-50 flex justify-center"
+                                className="w-full  fixed top-32  inset-x-0 lg:hidden z-50 flex justify-center"
                             >
                                 <div className="w-11/12 flex justify-end">
 
