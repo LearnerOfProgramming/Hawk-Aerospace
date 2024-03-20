@@ -74,7 +74,7 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    Mobile dropdown menu
+                    {/* Mobile dropdown menu */}
 
                     <AnimatePresence>
                         {isOpen && (
