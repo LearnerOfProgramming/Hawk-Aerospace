@@ -38,7 +38,6 @@ function TestimonialCard() {
             </Card>
         
         </div>
-
     </>)
 }
 
